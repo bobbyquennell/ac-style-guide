@@ -1,0 +1,75 @@
+@import "./config";
+
+html{
+  overflow-x: hidden;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.root {
+  width: 100%;
+}
+
+.flexitem {
+  flex-grow: 1;
+}
+
+.head {
+  background-color: $color-primary;
+  color: $color-text;
+  display: flex;
+  left: 0;
+  margin: auto;
+  max-width: 940px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.headblock {
+  background-color: $color-primary;
+  display: flex;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.maincontent {
+  font-family: $font-blackcond;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 900px;
+  position: relative;
+  top: 50px;
+}
+
+.hero {
+  background-color: $color-dark-contrast;
+  border: 1px $color-light-contrast;
+  color: $color-p;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+  }
+}

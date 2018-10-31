@@ -11,7 +11,7 @@ const Navigation =({className})=>{
       [className]: className})}>
       <Link className={style.navitem} to="/Docs">Docs</Link>
       <Link className={style.navitem} to="/">Blog</Link>
-      <a className={style.navitem} href="https://github.com/bobbyquennell/react-arsenal">Github</a>
+      <a className={style.navitem} href="https://amazingco.visualstudio.com/AmazingCo/_git/ac-style-guide">Repo</a>
     </nav>
   );
 };

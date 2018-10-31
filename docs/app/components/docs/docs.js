@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from 'react-arsenal/Grid';
+import Grid from 'ac-style-guide/Grid';
 import componentData from '../../../../config/componentData';
 import ComponentPage from './componentpage/ComponentPage';
 import DocHeader from './docheader/docheader';

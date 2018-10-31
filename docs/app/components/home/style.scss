@@ -64,6 +64,10 @@ body {
   border: 1px $color-light-contrast;
   color: $color-p;
   margin: 0 auto;
+  a, a:visited, a:active, a:focus {
+    text-decoration: none;
+    color: $color-primary;
+  }
   h2 {
     text-align: center;
   }

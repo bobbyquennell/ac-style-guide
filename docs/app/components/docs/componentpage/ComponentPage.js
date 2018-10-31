@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DemoContainer from '../democontainer/democontainer';
 import Api from '../api/api';
-import Grid from 'react-arsenal/Grid';
+import Grid from 'ac-style-guide/Grid';
 import style from './style.scss';
 const ComponentPage = ({component}) => {
   //console.log(component);

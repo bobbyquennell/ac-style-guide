@@ -33,7 +33,7 @@ const useTypeScript = fs.existsSync(paths.appTsConfig);
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
-const sassModuleRegex = /\.module\.(scss|sass)$/;
+const sassModuleRegex = /\.(scss|sass)$/; // /\.module\.(scss|sass)$/;
 
 // common function to get style loaders
 const getStyleLoaders = (cssOptions, preProcessor) => {
@@ -147,7 +147,7 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       "react-native": "react-native-web",
-      "react-arsenal": path.resolve(__dirname, "../components")
+      "ac-style-guide": path.resolve(__dirname, "../components")
     },
     plugins: [
       // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -292,11 +292,11 @@ module.exports = {
           // to immediately apply all styles to the DOM.
           // By default we support SASS Modules with the
           // extensions .module.scss or .module.sass
-          {
-            test: sassRegex,
-            exclude: sassModuleRegex,
-            use: getStyleLoaders({ importLoaders: 2 }, "sass-loader")
-          },
+          // {
+          //   test: sassRegex,
+          //   exclude: sassModuleRegex,
+          //   use: getStyleLoaders({ importLoaders: 2 }, "sass-loader")
+          // },
           // Adds support for CSS Modules, but using SASS
           // using the extension .module.scss or .module.sass
           {

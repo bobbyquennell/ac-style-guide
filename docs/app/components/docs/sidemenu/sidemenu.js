@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Grid from 'react-arsenal/Grid';
+import Grid from 'ac-style-guide/Grid';
 import style from './style.scss';
 import classnames from 'classnames';
 

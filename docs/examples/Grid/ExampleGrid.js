@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from 'react-arsenal/Grid';
+import Grid from 'ac-style-guide/Grid';
 import style from './style.scss';
 const ExampleGrid = function(){
   return (

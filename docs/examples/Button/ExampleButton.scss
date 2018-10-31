@@ -1,0 +1,17 @@
+@import "../../app/theme/theme";
+.root {
+  background-color: $color-secondary;
+  width: 10rem;
+  height: 3rem;
+  &:hover {
+    background-color: white;
+    border-color: $color-secondary;
+    border-style: solid;
+    border-width: 0.1rem;
+    color: $color-secondary;
+  }
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: $font-blackcond;
+  color: white;
+}
